@@ -1,0 +1,24 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "bamazon homework",
+  "main": "bamazonCustomer.js",
+  "dependencies": {
+    "inquirer": "^6.5.1",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamyurkow/bamazon.git"
+  },
+  "author": "William Yurkow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/williamyurkow/bamazon/issues"
+  },
+  "homepage": "https://github.com/williamyurkow/bamazon#readme"
+}
