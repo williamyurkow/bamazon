@@ -65,7 +65,7 @@ function askCustomerWhatTheyWant(inventory) {
             default:
                 console.log("we dont have it");
         }
-    
+
     })
 }
 
@@ -75,23 +75,25 @@ function check(id, inventory) {
         if (inventory[i].item_name === answer.choice) {
             return intentory[i]
             return null;
-          }
+        }
     }
-    
+
 }
 
 function howmany() {
     inquirer
-    .prompt([
-        if (quantity.item_id  < parseInt(answer.bid)){
+        .prompt([
+            if (quantity.item_id < parseInt(answer.bid)) {
 
-        }
-    ])
+            }
+        ])
 }
 // once you get response
 //parseint the answer = quantity
 //*check if quantity > product.stock_quantity
 //*makePurchase(product, quantity)
+
+
 function makePurchase(product, quantity) {
     //query update products set stock_quantity = stock_quantity - ?
     //Where item_id =?
