@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
     // Your username
     user: "root",
     password: "PASS",
-    database: "bamazon_DB"
+    database: "bamazon_db"
 });
 
 
@@ -68,6 +68,18 @@ function managerChoice(products) {
         });        
 }
 
+
+function lowInventory() {
+    connection.query("SELECT * FROM products WHERE stock_quantity <= 5", function(err, res) {
+        if (err) throw err;
+        console.table(res);
+        managerChoice(res);
+        // // Log all results of the SELECT statement
+
+        // console.log(res);
+        
+    });
+}
 
 
 

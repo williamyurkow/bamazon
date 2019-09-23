@@ -75,31 +75,31 @@ function check() {
         });
 }
 
-function howmany(product) {
-    inquirer.prompt([{
-            type: "input",
-            name: "quantity",
-            message: "how many would you like?"
-        }]).then(function(res) {
-            console.log(res)
-            if (quantity > stock_quantity) {
-                console.log("we do not have enough")
-                loadProducts()
+// function howmany(product) {
+//     inquirer.prompt([{
+//             type: "input",
+//             name: "quantity",
+//             message: "how many would you like?"
+//         }]).then(function(res) {
+//             console.log(res)
+//             if (quantity > stock_quantity) {
+//                 console.log("we do not have enough")
+//                 loadProducts()
 
-            } else {
-                makePurchase(product, quantity)
-            }
+//             } else {
+//                 makePurchase(product, quantity)
+//             }
 
-        })
-}
+//         })
+// }
 // once you get response
 //parseint the answer = quantity
 //*check if quantity > product.stock_quantity
 //*makePurchase(product, quantity)
 
 
-function makePurchase(product, quantity) {
-    //query update products set stock_quantity = stock_quantity - ?
-    //Where item_id =?
-    //[quanity, product.item_id]
-}
+// function makePurchase(product, quantity) {
+//     //query update products set stock_quantity = stock_quantity - ?
+//     //Where item_id =?
+//     //[quanity, product.item_id]
+// }
